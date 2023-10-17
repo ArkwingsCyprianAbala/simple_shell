@@ -1,5 +1,13 @@
 #include "shell.h"
 
+/**
+ * end_term - Entry point
+ *@cmnd: Reurns a command
+ *@argv: Return char arg
+ *@mystts: Return the status of the code
+ *@n_index: loops through the ar by index
+ * Return: Always 0 (Success)
+ */
 void end_term(char **cmnd, char **argv, int *mystts, int n_index)
 {
 	int value_of_exit = (*mystts);

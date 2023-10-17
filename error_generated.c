@@ -1,5 +1,11 @@
 #include "shell.h"
-
+/**
+ * error_generated - Entry point
+ *@label: Output stderr
+ *@my_cmnd: command that out puts the err
+ *@n_index: returns char
+ * Return: Always 0 (Success)
+ */
 void error_generated(char *label, char *my_cmnd, int n_index)
 {
 	char *my_indx, my_msg[] = ": not found\n";

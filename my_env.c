@@ -1,5 +1,9 @@
 #include "shell.h"
-
+/**
+ * _getenviron - Entry point
+ *@s_varable: Return str
+ * Return: Always 0 (Success)
+ */
 char *_getenviron(char *s_varable)
 {
 	char *temp, *mykey, *my_value, *myenv;
@@ -8,7 +12,7 @@ char *_getenviron(char *s_varable)
 	for (n = 0; environ[n]; n++)
 	{
 		temp = stringdup(environ[n]);
-		mykey = strtok(temp, "="); 
+		mykey = strtok(temp, "=");
 		if (stringcomp(mykey, s_varable) == 0)
 		{
 			my_value = strtok(NULL, "\n");
